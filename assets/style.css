@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:white;
+    width: 100%;
+}
+html{
+
+}
+.link ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    width:40%;
+
+}
+.link li a {
+    text-decoration:none;
+    color: white;
+    margin-right: 40px;
+}
+.container,
+.sec-in-header{
+    display: flex;
+    margin: 0 130px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: right;
+    
+}
+.logo{
+    width: 20%;
+}
+img{
+    width: 150px;
+}
+header{
+    background-image: linear-gradient(to bottom right , purple, rgba(41, 4, 248, 0.7)) , url("imgs/wallpaper.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    height: 80vh;
+}
+ .sec-in-header{
+    display: flex;
+} 
+.img-bts,
+.cote-img{
+    width:50%;
+}
+.img-bts img {
+    width: 100%;
+
+  }
+  .cote-img {
+    color: white;
+    width: 25%;
+
+  }
+  .cote-img{
+    padding: 50px 0 0 160px ;
+  }
+  .cote-img P {
+margin-top:15px;
+font-size: large;
+  }
+  .cote-img h1{
+    font-size: 25px;
+  }
+  /* .sec-bottom:first-child {
+    text-decoration: none; 
+    display: block;
+    margin-right: 20px;
+    color: white;
+    border-radius: 100px;
+    padding:  10px 15px;
+  }
+  .sec-bottom{
+    margin : 25px;
+    display: flex;
+  }
+  .sec-bottom button{
+    background-color: #F5167E;
+} */
+
+.sec-bottom{
+    margin-top: 25px;
+}
+.sec-bottom button{
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+#col-1{
+    border: none;
+    background-color:#f5167e;
+    color: white;
+}
+
+#col-2{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+label{
+    display:block;
+}
+.box{
+    display: flex;
+}
