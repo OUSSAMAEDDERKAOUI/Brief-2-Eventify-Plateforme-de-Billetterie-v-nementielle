@@ -8,6 +8,7 @@ body{
     width: 100%;
 }
 html{
+overflow-x: hidden;
 
 }
 .link ul{
@@ -112,9 +113,54 @@ font-size: large;
     background-color: transparent;
     color: white;
 }
-label{
-    display:block;
-}
+
+
 .box{
     display: flex;
+}
+label{
+    display:block;
+    font-size: larger;
+}
+.box div{
+    padding: 0 35px;
+}
+option{
+    font-size: large;
+    color : white;
+}
+.box div input,
+.box div select,
+.box div input:focus,
+.box div select:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none ;
+}
+
+.box{
+    display: flex;
+    background-color: #242565;
+    color: white;
+    width: 70%;
+    margin:-45px 15% 0 ;
+    padding: 25px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+select{
+    padding: 0 75px;
+}
+footer{
+background-color: #0A075F;
+}
+
+.first-div{
+    background-color: rgb(235, 111, 10);
+    margin:60px;
+    width: 33%;
+
 }
