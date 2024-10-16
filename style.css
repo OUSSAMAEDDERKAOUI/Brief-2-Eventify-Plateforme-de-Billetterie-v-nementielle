@@ -1,0 +1,29 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 , 33.33%);
+    /* grid-template-columns: 1000px 95%; */
+    grid-template-rows: 300px 200px 100px 200px;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "body body ."
+    "body body ."
+    "A1 A1 footer";
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    grid-area: header;
+}
+
+.item:nth-child(2) {
+    grid-area: A1;    
+}
+
+/* .item:nth-child(4) {
+    area
+} */
