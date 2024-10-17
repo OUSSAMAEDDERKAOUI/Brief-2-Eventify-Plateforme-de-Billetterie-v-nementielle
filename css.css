@@ -1,0 +1,88 @@
+.nav-link:hover:not(.active):not(.btn-primary){
+    background-color: rgb(74, 169, 186) !important;
+    border-radius: 15px; 
+}
+
+.InscriptionsTitle{
+    background-color: rgb(108, 175, 214);
+    padding: 10px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 25px #88a4b1;
+    text-align: center;
+    color: aliceblue;
+    /* border-radius: 10px; */
+    }
+html{
+    scroll-behavior: smooth;
+}
+/* form{
+    background-color: rgb(242, 245, 247);
+padding: 20px;
+margin: 20px;
+width:70%;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 0px 25px #88a4b1;
+} */
+.inscri{
+background-color: white;
+padding: 10px;
+margin: 10px;
+width:50%;
+margin-left: auto;
+margin-right: auto;
+border : 5px solid rgb(150, 210, 228);
+box-shadow: 0px 0px 25px #88a4b1;
+
+}
+#exampleInputNumInscription,
+#exampleInputEmailInscription,
+#exampleInputPasswordInscription,
+#exampleInputNomInscription{
+    margin: 10px;
+    padding: 10px;
+    width:90%;
+margin-left: auto;
+margin-right: auto;
+display : block;
+}
+.exampleInputCHeckBoxInscription{
+    margin: 10px;
+    padding: 0 20px;
+    width:100%;
+}
+#exampleInputSubInscription{
+    background-color: rgb(150, 210, 228);
+    margin: 10px;
+    padding: 10px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    display : block;
+}
+
+
+
+.contactimg{
+    background-image: url('./assets/imgs/karsten-winegeart-ZhZziGTRhPg-unsplash.jpg') !important;
+}
+.inscription-img{
+    background-image: url('./assets/imgs/img-ins.jpg')!important;
+}
+.blog-img{
+    background-image: url('./assets/imgs/marek-piwnicki-7KX8I2_wgyY-unsplash.jpg')!important;
+}
+.card:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    background-color: #30b9d8;
+    color: rgb(7, 7, 7);
+    
+
+  }
+  .card{
+    transition: all 1s;
+    cursor: pointer;
+  }
