@@ -500,3 +500,39 @@ padding-left: 35px;
         transition: all .5s;
         cursor: pointer;
  }
+ .box-about{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto auto;
+    margin: 25px 15%;
+    gap: 20px;
+    text-align: center;
+    background-color: #242565;
+    color: white;
+    width: 70%;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: -55px;
+     
+    
+  }
+  .b1{
+    grid-column: span 1;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------ */
+                                                             /* LOGIN PAGE */
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  .sec-in-header-login{
+    display: flex;
+  }
+  .form-login{
+    background-color: #F6FBF9;
+    opacity: 38%;
+  }
+.form-login input{
+    display: block;
+
+}
+.form-title{
+    color;
+}
