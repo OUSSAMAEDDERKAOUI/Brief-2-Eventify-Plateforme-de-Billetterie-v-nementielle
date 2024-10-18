@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+.active {
+    color : red !important;
+    }
 
 /* body{
     background-color:rgb(255, 255, 255);
@@ -30,14 +33,13 @@ overflow-x: hidden;
     color: white;
     margin-right: 40px;
         padding: 8px  12px ;
-
 }
-
-.link li:not(.login) a:hover{
-    background-color: #e91e8e;
+.link li:not(.login) a:hover:not(.active) {
+    background-color: #e91e8e ;
     color: white;
     border-radius: 35px;
   }
+  
 .container,
 .sec-in-header{
     display: flex;
@@ -66,7 +68,7 @@ header{
     padding: 15px;
     height: 80vh;
 }
- .sec-in-header{
+.sec-in-header{
     display: flex;
 } 
 .img-bts,
@@ -83,11 +85,11 @@ header{
 
   }
   .cote-img{
-    padding: 50px 0 0 160px ;
+    padding: 100px 0 0 160px ;
   }
   .cote-img P {
 margin-top:15px;
-font-size: large;
+
   }
   .cote-img h1{
     font-size: 25px;
@@ -106,6 +108,7 @@ font-size: large;
     border: none;
     background-color:#f5167e;
     color: white;
+    margin-right: 15px;
 }
 
 #col-2{
@@ -510,9 +513,9 @@ padding-left: 35px;
     background-color: #242565;
     color: white;
     width: 70%;
-    padding: 25px;
+    padding: 14px;
     border-radius: 20px;
-    margin-top: -55px;
+    margin-top: -50px;
      
     
   }
@@ -522,17 +525,83 @@ padding-left: 35px;
   /* ------------------------------------------------------------------------------------------------------------------ */
                                                              /* LOGIN PAGE */
   /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  .login-page {
+    background-image: linear-gradient(to bottom right , purple, rgba(41, 4, 248, 0.7)) , url("imgs/wallpaper.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    height: 96vh;
+  }
+  .img-bts-login {
+    width: 55%;
+    margin-left: 0px;
+    margin-top: 60px;
+
+  }
+  .img-bts-login img{
+    width: fit-content;
+    
+  }
   .sec-in-header-login{
     display: flex;
   }
   .form-login{
-    background-color: #F6FBF9;
-    opacity: 38%;
+    background-color:  rgb(148, 112, 112,0.3) ;
+    margin-top: 80px;
+    margin-left: 80px;
+    height: 400px;
+    width: 30%;
+    /* margin-bottom: 700px; */
+    border: 1px solid black;
+    box-shadow: 10px 10px 9px 1px rgba(8, 8, 16, 1);
+
   }
 .form-login input{
     display: block;
+}
+.form-login form {
 
+    grid-row: 3/7;
 }
 .form-title{
-    color;
+    color:white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.form-title p {
+    padding: 10px 10px;
+    font-size: 400;
+    font-weight: bold;
+}
+.form-input input{
+    margin:  15px  auto;
+    padding: 10px 100px;
+    text-align: center;
+    align-self: center;
+    display: block;
+    width: 30%;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    outline: none;
+ }
+
+
+
+.login-input{
+width:15% !important;
+background-color: rgb(40,12,183,0.5);
+cursor: pointer;
+
+}
+.forget-pass {
+text-align: center;
+}
+.forget-pass a{
+    color: black ;
+
 }

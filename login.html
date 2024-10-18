@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- login section  -->
-    <header>
+    <header class="login-page">
         <nav class="container">
             <div class="logo">
                 <img src="imgs/logo.png" alt="Logo de Eventify">
@@ -18,23 +18,27 @@
                     <li><a href="indix.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="speakers.html">Speakers</a></li>
-                    <li  class="login"><a href="#">Login</a></li>
+                    <li  class="login "><a class="active" href="#">Login</a></li>
                 </ul>
             </div>
         </nav>
         <section class="sec-in-header-login">
-            <div class="img-bts">
-                <img src="imgs/image.png" alt="image de bts">
+            <div class="img-bts-login">
+                <img src="imgs/img-bts-login.png" alt="image de bts">
             </div>
             <div class="form-login">
                 <div class="form-title">
                     <h1>Welcome Back</h1>
                     <P>Today is a new day. It's your day. You shape it.Sign in to get your ticket</P>
                 </div>
-                <form >
-                    <input type="text" placeholder="user name" required>
-                    <input type="password" placeholder="password" required>
+                <form class="form-input">
+                    <input type="text" placeholder="Username" required focus>
+                    <input type="password" placeholder="Password" required>
+                    <input class="login-input" type="submit" value="Login">
                 </form>
+                <div class="forget-pass">
+                    <h3><a href="#">FORGOT PASSWORD ?</a></h3>
+                </div>
             </div>
             
         </section>
