@@ -6,13 +6,10 @@
     color : red !important;
     }
 
-/* body{
-    background-color:rgb(255, 255, 255);
-    width: 100%;
-    color: rgb(9, 9, 9);
-} */
+
 html{
 overflow-x: hidden;
+scroll-behavior: smooth;
 }
 
 .link ul{
@@ -22,11 +19,13 @@ overflow-x: hidden;
     display:flex;
 
 }
-.login{
+#login{
     border: 1px solid white;
     border-radius: 35px;
-    padding: 8px 0 8px 40px;
     margin-top: -7px;
+    cursor: pointer;
+    padding-inline: 35px;
+    /* display: block; */
 }
 .link li a {
     text-decoration:none;
@@ -58,6 +57,7 @@ overflow-x: hidden;
 img{
     width: 150px;
 }
+
 header{
     background-image: linear-gradient(to bottom right , purple, rgba(41, 4, 248, 0.7)) , url("imgs/wallpaper.jpg"); 
     background-size: cover;
@@ -98,10 +98,12 @@ margin-top:15px;
 
 .sec-bottom{
     margin-top: 25px;
+    cursor: pointer;
 }
 .sec-bottom button{
     padding: 10px 25px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 #col-1{
@@ -189,6 +191,7 @@ background-color: #0A075F;
 .footer-news-letter{
     width:35%;
     margin: 10px 10px 10px 0; 
+    padding: 10px 30px;
 }
 
 .footer-events,
@@ -196,10 +199,11 @@ background-color: #0A075F;
     width:15%;
     margin: 15px 10px 10px 0;
     display: block;
-
-    
 }
-
+.footer-news-letter h3,
+.footer-news-letter p{
+    padding: 10px;
+}
 
 .footer-events a,
 .footer-links a
@@ -264,20 +268,20 @@ color:#F3F3F3;
     color: black;
 }
 
-.newsletter input:focus{
+.newsletter input{
     border: none;
     outline: none;
 }
 
 .newsletter button{
     position: absolute;
-    right: 0;
+    right: 7px;
     top: 5px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     align-content: center;
     border: none;
-    border-radius: 30px;
-    margin-left: 10px;
+    border-radius: 35px;
+    /* margin-left: 20px; */
     background-color: deeppink;
     cursor: pointer;
 }
@@ -331,6 +335,8 @@ color:#F3F3F3;
 .events-card{
     grid-column: span 2;
     filter: drop-shadow(0px 18.9529px 47.3822px rgba(119, 115, 170, 0.1));
+    padding-bottom: 22px;
+
 }
 
 .events-card img{
@@ -357,11 +363,13 @@ color:#F3F3F3;
 
 .desc h2{
     font-size: 16px;
+    padding-top: 12px;
 }
 
 .desc p{
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 10px;  
+
 }
 
 .event-btn{
@@ -444,23 +452,62 @@ color:#F3F3F3;
 color: #242565;
 font-size: large;
 padding-top: 20px;
-
+padding-left: 10px;
 } 
 .blog-img p {
     color: #A5A5A5;
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-left: 18px;
+    margin-left: 15px;
 }
+.blog-img{
+    box-shadow: 10px 10px 9px 1px rgba(0, 0, 255, .2); 
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 44px;
+}
+.blog-img:hover{
+    scale: 1.05;
+    background-color: black;
+    color: white;
+    z-index: 2;
+ }
 
 /* <!-- End Blog section ------------------------------------------------------------------------- --> */
+
+/* <!-- Speakers section ------------------------------------------------------------------------- --> */
 .Speakers-title{
     grid-column: 1 / 7 ;
     text-align: center;
     padding: 0 50px;
     color: #0A075F;
 }
+.events-card{
+    box-shadow: 10px 10px 9px 1px rgba(0, 0, 255, .2); 
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 44px;
+}
+.events-card:hover{
+    scale: 1.05;
+    background-color: black;
+    color: white;
+    z-index: 2;
+ }
+ .header-speakers{
+    background-image: linear-gradient(to bottom right , rgb(141, 199, 215), rgba(250, 88, 215, 0.4)) , url("imgs/BACK-ABOUT.jpg"); 
+ }
+ .img-bts{
+    opacity: 0.6;
+ }
+
  /* -------------------------------------------------------------------------------- */
                                    /* PAGE ABOUT */
  /* -------------------------------------------------------------------------------- */
+ .header-about{
+    background-image: linear-gradient(to bottom right , rgb(231, 221, 231), rgba(41, 4, 248, 0.5)) , url("imgs/background-about.png"); 
+
+ }
  .sectors{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
@@ -489,7 +536,8 @@ padding-left: 35px;
     background-color: #D9D9D9;
     border: 1px solid black;
     padding: 10px;
-    box-shadow: 10px 10px 9px 1px rgba(0, 0, 255, .2); }
+    box-shadow: 10px 10px 9px 1px rgba(0, 0, 255, .2); 
+}
  .sectors-card img{
     width: 100%;
  }
@@ -527,7 +575,7 @@ padding-left: 35px;
   /* ------------------------------------------------------------------------------------------------------------------- */
   
   .login-page {
-    background-image: linear-gradient(to bottom right , purple, rgba(41, 4, 248, 0.7)) , url("imgs/wallpaper.jpg"); 
+    background-image: linear-gradient(to bottom right , rgb(201, 124, 173), rgba(118, 36, 231, 0.2)) , url("imgs/BACK-LOGIN.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -540,6 +588,7 @@ padding-left: 35px;
     width: 55%;
     margin-left: 0px;
     margin-top: 60px;
+    opacity: 0.5;
 
   }
   .img-bts-login img{
@@ -550,7 +599,7 @@ padding-left: 35px;
     display: flex;
   }
   .form-login{
-    background-color:  rgb(148, 112, 112,0.3) ;
+    background-color:  rgba(243, 239, 242, 0.3);
     margin-top: 80px;
     margin-left: 80px;
     height: 400px;
@@ -578,14 +627,14 @@ padding-left: 35px;
     font-size: 400;
     font-weight: bold;
 }
-.form-input input{
+.form-input input:not(.login-input){
     margin:  15px  auto;
     padding: 10px 100px;
     text-align: center;
     align-self: center;
     display: block;
     width: 30%;
-    border: 0.5px solid black;
+    border: none;
     border-radius: 15px;
     outline: none;
  }
@@ -593,9 +642,15 @@ padding-left: 35px;
 
 
 .login-input{
-width:15% !important;
 background-color: rgb(40,12,183,0.5);
 cursor: pointer;
+text-align: center;
+padding: 10px 100px;
+color: white;
+border-radius: 15px;
+border: none;
+margin-inline:auto;
+margin-bottom: 15px;
 
 }
 .forget-pass {
